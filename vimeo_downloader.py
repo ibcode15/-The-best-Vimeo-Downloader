@@ -38,9 +38,7 @@ def vimeo_downloader(url):
             item = magic_link[i]
             item_save = magic_link[i]
             try:
-                item = item.replace(".","†")
-                item = item.replace("%","†")
-                item = item.split("†")
+                item = item.replace(".","†").replace("%","†").split("†")
                 if "mp4" in item:
                     if count == 0:
                         count += 1
